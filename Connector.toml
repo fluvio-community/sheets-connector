@@ -1,0 +1,20 @@
+[package]
+name = "sheet-connector"
+group = "priyanshu"
+version = "0.1.0"
+apiVersion = "0.1.0"
+fluvio = "0.10.0"
+description = ""
+license = "Apache-2.0"
+visibility = "public"
+
+[direction]
+ dest = true 
+
+[deployment]
+binary = "sheet-connector"
+
+[custom.properties.foo]
+title = "Foo"
+description = "Foo"
+type = "string"

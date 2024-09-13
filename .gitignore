@@ -1,0 +1,4 @@
+/target
+/.hub
+.DS_Store
+secrets.txt
