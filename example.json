@@ -1,0 +1,12 @@
+{
+  "range": "A1",
+  "major_dimension": "ROWS",
+  "values": [
+    [
+      "A1 value",
+      "A2 value",
+      "a3 value"
+    ]
+  ],
+  "spreadsheet_id": "your-spreadsheet_id"
+}

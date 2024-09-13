@@ -1,0 +1,25 @@
+[package]
+name = "sheet-connector"
+version = "0.1.0"
+authors = ["Priyanshu Verma <priyanshuverma@outlook.in>"]
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+futures = { version = "0.3", default-features = false }
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_json = { version = "1", default-features = false }
+anyhow = { version = "1.0" }
+async-std = { version = "1.8", default-features = false, features = [
+  "attributes",
+  "tokio1",
+] }
+async-trait = { version = "0.1", default-features = false }
+fluvio = { git = "https://github.com/infinyon/fluvio", rev = "98cfc21314c93d4c2898edc9e2160f280622be21" }
+fluvio-connector-common = { git = "https://github.com/infinyon/fluvio", rev = "98cfc21314c93d4c2898edc9e2160f280622be21", features = [
+  "derive",
+] }
+fluvio-jolt = { version = "0.3" }
+humantime = "2.1.0"
+google-sheets4 = "*"

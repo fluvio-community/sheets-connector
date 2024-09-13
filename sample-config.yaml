@@ -1,0 +1,14 @@
+apiVersion: 0.1.0
+meta:
+  version: 0.1.0
+  name: my-sheet-connector-test-connector
+  type: sheet-connector-sink
+  topic: test-sheet-connector-topic
+  secrets:
+    - name: GOOGLE_PRIVATE_KEY
+    - name: GOOGLE_CLIENT_EMAIL
+    - name: GOOGLE_TOKEN_URI
+sheet:
+  google_private_key: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+  google_client_email: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
+  google_token_url: ${{ secrets.GOOGLE_TOKEN_URI }}
